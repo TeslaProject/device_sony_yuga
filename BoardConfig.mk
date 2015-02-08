@@ -25,7 +25,7 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/yuga/include
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 
-TARGET_KERNEL_CONFIG := cm_fusion3_yuga_defconfig
+TARGET_KERNEL_CONFIG := aospal_fusion3_yuga_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
@@ -36,3 +36,9 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
 BOARD_HARDWARE_CLASS += device/sony/yuga/cmhw
+
+# UGLY, overrides fusion3-common
+# Audio
+BOARD_USES_ALSA_AUDIO := true
+BOARD_USES_LEGACY_ALSA_AUDIO :=
+TARGET_USES_QCOM_COMPRESSED_AUDIO :=
