@@ -25,7 +25,14 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/yuga/include
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 
-TARGET_KERNEL_CONFIG := aospal_fusion3_yuga_defconfig
+# Kernel
+TARGET_KERNEL_CONFIG := cm_fusion3_yuga_defconfig
+TARGET_GCC_VERSION_ARM := 4.9-sm
+
+# Validus optimisations
+SYMMETRY := true
+GRAPHITE_OPTS := true
+STRICT_ALIASING := true
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
