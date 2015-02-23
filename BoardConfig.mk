@@ -26,7 +26,7 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/yuga/include
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := cm_fusion3_yuga_defconfig
+TARGET_KERNEL_CONFIG := fusion3_yuga_defconfig
 TARGET_GCC_VERSION_ARM := 4.9-sm
 
 # Validus optimisations
