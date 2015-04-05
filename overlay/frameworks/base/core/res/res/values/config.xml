@@ -80,8 +80,8 @@
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
 
-    <!-- We don't have button backlight. -->
-    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+    <!-- We don't have button backlight.
+    <integer name="config_buttonBrightnessSettingDefault">0</integer> -->
 
     <!-- Hardware keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -94,8 +94,8 @@
             32 - Camera
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">64</integer>
+         config to 7.
+    <integer name="config_deviceHardwareKeys">64</integer> -->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -108,8 +108,8 @@
             32 - Camera
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
+         config to 7.
+    <integer name="config_deviceHardwareWakeKeys">64</integer> -->
 
     <!-- SD card is hot-pluggable on this device -->
     <bool name="config_batterySdCardAccessibility">true</bool>
